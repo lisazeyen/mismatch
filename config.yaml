@@ -1,0 +1,26 @@
+scenarios:
+  clusters: [100]
+  opts: [Co2L0.3-1H]
+  country: [DE]
+  year: [2010, 2011, 2012, 2013, 2014]
+
+solving:
+  options:
+    formulation: kirchhoff
+    load_shedding: false
+    noisy_costs: true
+    min_iterations: 4
+    max_iterations: 6
+    clip_p_max_pu: 0.01
+    skip_iterations: true
+    track_iterations: false
+  solver:
+    name: gurobi
+    threads: 4
+    method: 2 # barrier
+    crossover: 0
+    BarConvTol: 1.e-4
+    FeasibilityTol: 1.e-4
+    AggFill: 0
+    PreDual: 0
+    GURO_PAR_BARDENSETHRESH: 200

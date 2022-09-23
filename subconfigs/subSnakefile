@@ -1,0 +1,54 @@
+subworkflow pypsaeurDE2009:
+    workdir: "submodules/pypsa-eur-DE-2009"
+    configfile: "subconfigs/config.pypsaeurDE2009.yaml"
+
+rule cp_DE2009:
+    input: pypsaeurDE2009("networks/elec_s_{clusters}_ec_lcopt_{opts}.nc")
+    output: "networks/elec_s_{clusters}_ec_lcopt_{opts}_cDE_y2009.nc"
+    shell: "cp {input[0]} {output[0]}"
+
+subworkflow pypsaeurDE2010:
+    workdir: "submodules/pypsa-eur-DE-2010"
+    configfile: "subconfigs/config.pypsaeurDE2010.yaml"
+
+rule cp_DE2010:
+    input: pypsaeurDE2010("networks/elec_s_{clusters}_ec_lcopt_{opts}.nc")
+    output: "networks/elec_s_{clusters}_ec_lcopt_{opts}_cDE_y2010.nc"
+    shell: "cp {input[0]} {output[0]}"
+
+subworkflow pypsaeurDE2011:
+    workdir: "submodules/pypsa-eur-DE-2011"
+    configfile: "subconfigs/config.pypsaeurDE2011.yaml"
+
+rule cp_DE2011:
+    input: pypsaeurDE2011("networks/elec_s_{clusters}_ec_lcopt_{opts}.nc")
+    output: "networks/elec_s_{clusters}_ec_lcopt_{opts}_cDE_y2011.nc"
+    shell: "cp {input[0]} {output[0]}"
+
+subworkflow pypsaeurDE2012:
+    workdir: "submodules/pypsa-eur-DE-2012"
+    configfile: "subconfigs/config.pypsaeurDE2012.yaml"
+
+rule cp_DE2012:
+    input: pypsaeurDE2012("networks/elec_s_{clusters}_ec_lcopt_{opts}.nc")
+    output: "networks/elec_s_{clusters}_ec_lcopt_{opts}_cDE_y2012.nc"
+    shell: "cp {input[0]} {output[0]}"
+
+subworkflow pypsaeurDE2013:
+    workdir: "submodules/pypsa-eur-DE-2013"
+    configfile: "subconfigs/config.pypsaeurDE2013.yaml"
+
+rule cp_DE2013:
+    input: pypsaeurDE2013("networks/elec_s_{clusters}_ec_lcopt_{opts}.nc")
+    output: "networks/elec_s_{clusters}_ec_lcopt_{opts}_cDE_y2013.nc"
+    shell: "cp {input[0]} {output[0]}"
+
+subworkflow pypsaeurDE2014:
+    workdir: "submodules/pypsa-eur-DE-2014"
+    configfile: "subconfigs/config.pypsaeurDE2014.yaml"
+
+rule cp_DE2014:
+    input: pypsaeurDE2014("networks/elec_s_{clusters}_ec_lcopt_{opts}.nc")
+    output: "networks/elec_s_{clusters}_ec_lcopt_{opts}_cDE_y2014.nc"
+    shell: "cp {input[0]} {output[0]}"
+
